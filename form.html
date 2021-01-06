@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <head>
+      <title>ui</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+  </head>
+  <body>
+    <div class="nav">
+      <a class= "home" href = "allaboutme.html"> Home Page </a>
+      <a class= "page2" href = "P2.html"> Softball </a>
+      <a class = "page3" href = "P3.html"> Etsy Shop </a>
+      <a class = "form" href = "form.html"> Personal Quiz </a>
+    </div>
+
+
+      <h1> How well do you know me? </h1>
+        <form>
+          <ol>
+            <li>
+              <label> When is my birthday? </label> <br>
+              <input type = "date"> </input>
+            </li>
+            <div id = "answer1"> Right or Wrong: </div>
+
+            <li class="favfood">
+              <label> What is my favorite food? </label> <br>
+              <input type = "radio" name ="food" id = "pizza"> Pizza </input> <br>
+              <input type = "radio" name ="food" id = "cheetos"> Mac and Cheese </input> <br>
+              <input type = "radio" name ="food" id = "boba"> Udon </input> <br>
+              <input type = "radio" name ="food" id = "sushi">  Sushi </input> <br>
+            </li>
+            <div id = "answer2"> Right or Wrong: </div>
+<br>
+            <li>
+              <label> Which places have I traveled to? ? </label> <br>
+              <input type = "checkbox" name = "place"> Hawaii </input> <br>
+              <input type = "checkbox" name = "place"> Europe </input> <br>
+              <input type = "checkbox" name = "place"> Alaska </input> <br>
+              <input type = "checkbox" name = "place"> Mexico </input> <br>
+            </li>
+            <div id = "answer3"> Right or Wrong: </div>
+<br>
+            <li>
+              <label> How old am I? </label>
+              <input type = "number" id = "age"> </input>
+            </li>
+            <div id = "answer4"> Right or Wrong: </div>
+<br>
+            <li>
+              <label> What is my favorite number? </label>
+              <input type = "password" type = "number"> </input>
+            </li>
+            <div id = "answer5"> Right or Wrong: </div>
+<br>
+            <li>
+              <label> Which city do I live in? </label>
+              <input> </input>
+            </li>
+            <div id = "answer6"> Right or Wrong: </div>
+<br>
+            <button type = "button" onclick = "rightOrWrong()"> Submit </button>
+
+          </ol>
+        </form>
+
+        <script>
+          var food = document.getElementsById("Sushi");
+          var age = document.getElementById("age");
+          var answer2 = document.getElementById("answer2");
+          var answer4 = document.getElementById("answer4");
+          function rightOrWrong(){
+            if (food.checked = "Sushi"){
+              answer2.innerHTML="You got my favorite food right!";
+            }
+            else {
+              answer2.innerHTML="You got my favorite food wrong!";
+            }
+
+            if (age.value == 14){
+              answer4.innerHTML = "You got my age right!";
+            }
+            else {
+              answer4.innerHTML = "You got my age wrong!";
+            }
+            if (place.value = "Hawaii" "Mexico"){
+              answer3.innerHTML="You got my favorite food right!";
+            }
+           else  {
+              answer3.innerHTML="You got my favorite food wrong!";
+           }
+          }
+
+        </script>
+
+      </body>
+
+    </html>
